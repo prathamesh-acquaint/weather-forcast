@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#root {
+  display: flex;
+  gap: 30px;
+}
+
+
+.container , .container-2 {
+  height: 80vh;
+  width: 90vh;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: auto;
+}
+
+.loader , .error{
+  align-self: center;
+  margin-top: 30%;
+}
+
+input, button {
+  margin-top: 30px;
+  font-size: 1rem;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form > button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+}
+
+.current-weather{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.city {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.additional-info {
+  display: flex;
+  align-self: center;
+  gap: 70px;
+  /* justify-content: space-around; */
+  margin-top: 20px;
+}
+
+.additional-info .icon img {
+  width: 100px;
+}
+
+.details ,
+.sun-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.temprature {
+  font-size: 3rem;
+}
+
+.weekly-weather-cards , .days-weather-cards{
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.weekly-card , .day-card{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container-2 {
+  width: 50vh;
+}
+
+.hourly-weather {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+
+.hourly-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hourly-card img {
+  width: 50px;
+}
+
+.upcoming-days-weather {
+  width: 100%;
+}
+
+.days-wrapper {
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.upcoming-days-weather {
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .container , .container-2 {
+    height: 450px;
+    width: 350px;
+  }
+
+}
